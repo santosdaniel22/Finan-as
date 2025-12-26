@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}
+/* 
+INSTRUÇÕES VERCEL SETTINGS:
+- Framework Preset: Vite
+- Build Command: npm run build
+- Output Directory: dist
+- Install Command: npm install
+- Node.js Version: 18.x ou 20.x
+*/

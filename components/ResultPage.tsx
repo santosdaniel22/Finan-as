@@ -5,9 +5,10 @@ import { DiagnosticResult } from '../types';
 interface ResultPageProps {
   result: DiagnosticResult;
   onContinue: () => void;
+  onBack: () => void;
 }
 
-const ResultPage: React.FC<ResultPageProps> = ({ result, onContinue }) => {
+const ResultPage: React.FC<ResultPageProps> = ({ result, onContinue, onBack }) => {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 text-center">
       <div className="bg-emerald-600 text-white rounded-3xl p-12 shadow-2xl shadow-emerald-200 mb-8">
@@ -26,16 +27,26 @@ const ResultPage: React.FC<ResultPageProps> = ({ result, onContinue }) => {
         </div>
       </div>
 
-      <div className="space-y-8 max-w-2xl mx-auto">
+      <div className="space-y-6 max-w-2xl mx-auto">
         <p className="text-slate-600 text-lg">
           O sistema de planilhas <strong>MY Finance</strong> foi projetado exatamente para automatizar essa alocação de recursos que você precisa hoje.
         </p>
-        <button
-          onClick={onContinue}
-          className="w-full bg-slate-900 text-white py-6 rounded-2xl text-xl font-bold hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl active:scale-95"
-        >
-          Acessar minha planilha personalizada →
-        </button>
+        
+        <div className="flex flex-col gap-4">
+          <button
+            onClick={onContinue}
+            className="w-full bg-slate-900 text-white py-6 rounded-2xl text-xl font-bold hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl active:scale-95"
+          >
+            Acessar minha planilha personalizada →
+          </button>
+          
+          <button
+            onClick={onBack}
+            className="text-slate-400 hover:text-slate-600 font-semibold text-sm transition-colors py-2"
+          >
+            ← Voltar e corrigir respostas do diagnóstico
+          </button>
+        </div>
       </div>
     </div>
   );

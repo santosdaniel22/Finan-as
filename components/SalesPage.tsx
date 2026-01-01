@@ -21,7 +21,7 @@ const SalesPage: React.FC = () => {
       <section className="pt-20 pb-16 px-4 bg-gradient-to-b from-white to-slate-50 border-b border-slate-100">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-block px-4 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
-            Acesso Imediato à Planilha Premium
+            Gestão Profissional MY Finance
           </div>
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-8 leading-[1.1]">
             Domine seu dinheiro: A planilha completa para alocar <span className="text-emerald-600 italic">receitas e despesas com 1 clique.</span>
@@ -43,7 +43,7 @@ const SalesPage: React.FC = () => {
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a href="#oferta" className="bg-emerald-600 text-white px-8 py-5 rounded-2xl text-xl font-bold hover:bg-emerald-700 transition-all shadow-xl shadow-emerald-200 hover:-translate-y-1">
-              Baixar minha planilha agora
+              Quero minha planilha agora
             </a>
             <a href="#solucao" className="bg-white text-slate-600 border-2 border-slate-200 px-8 py-5 rounded-2xl text-xl font-bold hover:bg-slate-50 transition-all">
               Ver o que está incluído
@@ -104,7 +104,7 @@ const SalesPage: React.FC = () => {
               Uma planilha que trabalha por você. Não o contrário.
             </h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              Diferente de sistemas complexos ou aplicativos que cobram mensalidade, o <strong>MY Finance</strong> é uma ferramenta única e vitalícia. Você aloca seus gastos, e o sistema gera os gráficos e o resumo mensal automaticamente.
+              Diferente de sistemas complexos ou aplicativos que cobram mensalidade, o <strong>MY Finance</strong> é uma ferramenta única e vitalícia. Você aloca seus gastos, e o sistema gera os gráficos e a visão consolidada mensal automaticamente.
             </p>
             <ul className="space-y-4 text-slate-600">
               <li className="flex gap-3 items-start">

@@ -101,7 +101,7 @@ export const SPREADSHEETS: SpreadsheetInfo[] = [
     objective: "Centralizar toda a saúde financeira do mês em uma única tela.",
     columns: ["Categoria", "Previsão", "Realizado", "Diferença", "Status"],
     formulas: ["ARRAY_HEADER (Cálculo Externo)", "SUMIFS Dinâmico", "SE(Vazio;\"\")"],
-    benefit: "Visão 360º sem fórmulas que bloqueiam a exclusão manual de linhas."
+    benefit: "Visão consolidada sem fórmulas que bloqueiam a exclusão manual de linhas."
   },
   {
     id: "2",
@@ -169,10 +169,10 @@ export const SPREADSHEETS: SpreadsheetInfo[] = [
   },
   {
     id: "10",
-    name: "Resumo Financeiro Visual",
+    name: "Dashboard de Inteligência Financeira",
     objective: "Dashboard automático com gráficos de performance.",
     columns: ["Gráficos de Pizza", "Gráficos de Linha", "Indicadores de Saúde"],
     formulas: ["Pivot Tables Protegidas", "Named Ranges"],
-    benefit: "Dashboard que ignora linhas vazias, mantendo o visual profissional."
+    benefit: "Dashboard MY Finance que ignora linhas vazias, mantendo o visual profissional."
   }
 ];
